@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com</groupId>
+  <artifactId>test-junit</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>test-junit</name>
+  <description>Pruebas de junit</description>
+  
+ <dependencies> 
+ 
+<!-- Ejecutar tests-->
+<!--Assertions (assertEquals, assertThrows)-->
+<!--Ciclo de vida (@BeforeEach)-->
+  <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter</artifactId>
+    <version>5.10.2</version>
+    <scope>test</scope>
+</dependency>
+
+
+
+<!--Simular dependencias (DB, APIs)-->
+<!--when().thenReturn()-->
+<!--verify()-->
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-core</artifactId>
+    <version>5.11.0</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.mockito</groupId>
+    <artifactId>mockito-junit-jupiter</artifactId>
+    <version>5.11.0</version>
+    <scope>test</scope>
+</dependency> 
+
+
+
+
+<dependency>
+    <groupId>org.assertj</groupId>
+    <artifactId>assertj-core</artifactId>
+    <version>3.25.3</version>
+    <scope>test</scope>
+</dependency>
+
+
+<!--Esto ya viene todo integrado-->
+<!--JUnit-->
+<!--Mockito-->
+<!--AssertJ-->
+<!--MockMvc-->
+<!--<dependency>-->
+<!--    <groupId>org.springframework.boot</groupId>-->
+<!--    <artifactId>spring-boot-starter-test</artifactId>-->
+<!--    <version>3.2.5</version>-->
+<!--    <scope>test</scope>-->
+<!--</dependency>-->
+
+
+  </dependencies>
+  
+</project>

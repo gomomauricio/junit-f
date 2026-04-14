@@ -12,14 +12,14 @@ public class UserServiceTest {
 	private UserService userService;
 	
 	@BeforeEach
-	void setUp()
+	public void setUp()
 	{
 		userService = new UserService();
 	}
 	
 	
 	@Test
-	void shouldThrowException_whenEmailIsNull()
+	public void shouldThrowException_whenEmailIsNull()
 	{
 		assertThrows( IllegalArgumentException.class , () -> userService.register(null));
 	}

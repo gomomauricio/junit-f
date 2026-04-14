@@ -13,14 +13,14 @@ public class CalculatorTest
 	private Calculator calculator;
 	
 	@BeforeEach
-	void setUp()
+	public void setUp()
 	{
 //		System.out.println("Antes del test");
 		calculator = new Calculator();
 	}
 	
 	@Test
-	void shouldAddNumbers()
+	public void shouldAddNumbers()
 	{
 		int result = calculator.add(2, 3);
 //		System.out.println("Despues del test = " + result);

@@ -1,4 +1,4 @@
-#  Plan esencial (6 días) – JUnit + Mockito para mundo real
+# JUnit + Mockito  
  
 # Fundamentos de testing con JUnit 5
 
@@ -93,16 +93,10 @@ void shouldThrowException_whenEmailIsNull() {
 
 ## TIP'S
 
-* Tests de casos negativos ❗
+* Tests de casos negativos 
 * Validación de errores (MUY importante)
 
-
-
-
-
-
-
-
+ 
 
 ----
 # Introducción a Mockito (mockear dependencias)
@@ -162,23 +156,10 @@ class UserServiceTest {
 }
 ```
 
-##  TIP'S
-
+##  TIP'S 
 * Saber mockear DB / APIs
 * No depender de infraestructura real
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 ----
 # Verificación de comportamiento (verify)
 

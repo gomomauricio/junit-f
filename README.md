@@ -188,16 +188,8 @@ void shouldCallRepository() {
 
 * Saber si tu código llama correctamente a dependencias
 * Testing de flujo, no solo resultado
-
-
-
-
-
-
-
-
-
-
+ 
+ 
 ----
 # Casos reales (Service + lógica + mocks)
 
@@ -242,21 +234,14 @@ void shouldProcessPayment() {
 * Testing de services ( esto es lo MÁS importante)
 * Separación de responsabilidades
 
-
-
-
-
-
-
+ 
 ----
 #  Buenas prácticas  
 
 ##  Objetivo
 
-Escribir tests como senior.
-
-##   Debes dominar
-
+Escribir tests avanzados.
+ 
 * Nombres claros:
 
   * `shouldReturnX_whenY`
@@ -265,7 +250,7 @@ Escribir tests como senior.
 * No usar datos mágicos
 * Uso de builders o factory (opcional)
 
-##   Ejercicio final (mini reto)
+##   Ejercicio final 
 
 Testea esto:
 
@@ -295,33 +280,7 @@ class OrderService {
 * Caso exitoso
 * Caso fallo
 * Excepción
-
----
-
-#   Checklist final  
-
-Si sabes esto, ya estás listo:
-
-✅ JUnit 5 annotations
-✅ Assertions
-✅ assertThrows
-✅ Mockito (`@Mock`, `@InjectMocks`)
-✅ when / thenReturn
-✅ verify
-✅ Testear services
-✅ Casos positivos y negativos
-
----
-
-# Bonus 
-
-Si quieres subir de nivel después:
-
-* `@SpringBootTest` (integración)
-* `Testcontainers`
-* `MockMvc`
-* Coverage (JaCoCo)
-
+ 
  
 
 

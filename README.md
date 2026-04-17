@@ -165,7 +165,7 @@ class UserServiceTest {
 
 ## Objetivo
 
-Validar interacciones (muy usado en entrevistas).
+Validar interacciones.
 
 ## Conceptos clave
 

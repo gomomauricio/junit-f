@@ -1,6 +1,7 @@
 package com.test.mockito;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
  
 import org.junit.jupiter.api.Test;
@@ -21,17 +22,35 @@ public class UserServiceTest
 	@InjectMocks
 	UserService service;
 	
-	@Test
-	public void shouldReturnUserName()
-	{
-		   System.out.println("TEST RUNNING");
-		when(repo.findNameById(1)).thenReturn("Mauricio");
-		
-		String result = service.getUserName(1);
-		
-		assertEquals("Mauricio", result);
-		
-	}
 	
+	
+
+
+
+//	@Test
+//	public void shouldReturnUserName()
+//	{
+//		   System.out.println("TEST RUNNING");
+//		when(repo.findNameById(1)).thenReturn("Mauricio");
+//		
+//		String result = service.getUserName(1);
+//		
+//		assertEquals("Mauricio", result);
+//		
+//	}
+	
+	
+	
+	@Test
+	void shouldReturnUserName() {
+	    UserRepository repo = mock(UserRepository.class);
+	    UserService service = new UserService(repo);
+
+	    when(repo.findNameById(1)).thenReturn("Mauricio");
+
+	    String result = service.getUserName(1);
+
+	    assertEquals("Mauricio", result);
+	}
 
 }
